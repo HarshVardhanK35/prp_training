@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation-Regex</title>
+</head>
+<body>
+    <form id="form1" action="#">
+        <label>Enter Password:</label>
+        <input type="password" id="pwd" value="" placeholder="Enter Password"><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+<script>
+
+    document.getElementById("form1").onsubmit=
+    function (event) {
+
+        // event.preventDefault();
+        var pwd = document.getElementById("pwd").value;
+
+        if(pwd.length<=6) {
+            alert("password characters must be greater than 6")
+        }
+        else if(6>pwd.length<=20){
+
+            if(pwd.match(/[a-z]/g)){
+                console.log("allowed")
+            }
+      
+            else{
+                alert("password must contain one lower case")
+            }
+
+            if(pwd.match(/[A-Z]/g)){
+                console.log("allowed")
+            }
+
+            else{
+                alert("password must contain one upper case")
+            }
+
+            if(pwd.match(/[0-9]/g)){
+                console.log("allowed")
+            }
+
+            else{
+                alert("password must contain one digit")
+            }
+        }
+
+        if(pwd.length>=20){
+            alert("password must not be greater than 20")
+        }
+    }
+    
+    </script>
+</body>
+</html>

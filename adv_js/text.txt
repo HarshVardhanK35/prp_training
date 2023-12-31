@@ -1,0 +1,32 @@
+assign-9
+
+// const fruitsQuantity = arr.map((item)=>{
+//     if(item.fruit == "orange"){
+//         return item.quantity - 1;
+//     }
+// });
+
+
+
+assign-11
+
+// let number = "";
+// let enteredNum = prompt("Enter Your Contact Number\nIf You Don't Want To, Enter \"NO\"");
+
+// if(enteredNum == "no" || enteredNum == "NO"){
+//     console.log("You did not enter your contact number");
+// }
+// else{
+//     var res = number + enteredNum;
+// }
+// const data = {
+//     name: 'John',
+//     age: 25,
+// }
+// if(res == undefined){
+//     data.contact = "You Have Not Entered Your Number!"
+// }
+// else{
+//     data.contact = +res
+// }
+// console.log(data)

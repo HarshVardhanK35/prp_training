@@ -1,0 +1,5 @@
+console.log("Welcome to Node.js");
+
+// Open terminal.
+// Go to the respective file in terminal .
+// And execute the respective file using Node.

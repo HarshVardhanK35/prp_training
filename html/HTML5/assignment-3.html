@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration-form</title>
+</head>
+<style>
+    .information{
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+        height: 200px;
+        width: 600px;
+    }
+    label{
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="Information" 
+        style="border: 1px solid black; 
+        margin: auto;
+        width: auto; 
+        height: auto;
+        padding: 2px; 
+        text-align: center;
+        border: 1px solid black;">
+
+       
+
+        <h1 style="text-align: center;">Online Registration-form</h1>
+        <hr style="border-top: 2px solid black; width: 80%; "> </hr>
+
+        <form action="">
+            <label for="User-Name">User Name</label>
+            <input type="User-Name" name="User-Name" id="User-Name" style="margin-bottom: 10px;" placeholder="JohnDoe357"><br>
+
+            <label for="password">Enter your password</label>
+            <input type="password" id="password" name="password"  style="margin-bottom: 10px;" placeholder="Enter Password"><br>
+
+            <label for="password">Confirm password</label>
+            <input type="password" id="password" name="password"  style="margin-bottom: 10px;" placeholder="Confirm Password"><br>
+
+            <label for="User-Name">Name</label>
+            <input type="User-Name" name="User-Name" id="User-Name" style="margin-bottom: 10px;" placeholder="John Doe"><br>
+
+            <label for="gender">Gender: </label>
+            <label for="Male">Male</label>
+            <input type="radio" name="Male">
+            <label for="Female">Female</label>
+            <input type="radio" name="Female"><br>
+
+            <label>Address:</label>
+            <textarea name="Address" placeholder="textarea" required="important"></textarea>
+            <br/>
+
+            
+            <label for="Select Occupation">Select your Profession</label>
+
+                <select name="occupations" id="occupations">
+                    <option value="">Select Occupation</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Doctor">Doctor</option>
+                </select><br>
+        </form>
+    </div>                     
+</body>
+</html>

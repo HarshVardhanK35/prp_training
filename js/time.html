@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time-Display</title>
+</head>
+<body onload="myTime();">
+  <h1 id="time"></h1>
+
+  <script>
+    function myTime() {
+
+      let todayDate = new Date();
+      var presentHour = todayDate.getHours();
+      var presentMinute = todayDate.getMinutes();
+      var presentSec = todayDate.getSeconds();
+
+      document.getElementById("time").innerHTML = "Present-Time: "+ presentHour + ":" + presentMinute + ":" + presentSec;
+      setTimeout(myTime, 1000);
+    }
+  </script>
+</body>
+</html>

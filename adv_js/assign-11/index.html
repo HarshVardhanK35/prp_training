@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON_Parse</title>
+  </head>
+  <body>
+    <script>
+
+      // Get the JSON input from the user
+      const jsonString = prompt("Enter the JSON input:");
+
+      try {
+        // Attempt to parse the JSON string into a JavaScript object
+        const jsonObject = JSON.parse(jsonString);
+
+        // Display the JavaScript object in the console
+        console.log(jsonObject);
+        
+      } catch (error) {
+        // If parsing fails, display an error message in the console
+        console.error("Invalid JSON input:", error);
+      }
+
+    </script>
+  </body>
+</html>

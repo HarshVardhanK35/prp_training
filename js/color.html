@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    button{
+        width: 100vw;
+        height: 40px;
+        display: inline-block;
+    }
+    red, blue, aqua{
+        list-style: none;
+    }
+  </style>
+</head>
+<body>
+    <button><a style="font-size: 5vh; text-decoration: none;" onclick="myFunction(id)" id="red" href="#">red</a></button><br>
+    <button><a style="font-size: 5vh; text-decoration: none;" onclick="myFunction(id)" id="blue" href="#">blue</a></button><br>
+    <button><a style="font-size: 5vh; text-decoration: none;" onclick="myFunction(id)" id="aqua" href="#">aqua</a></button>
+  <script>
+    const myFunction = (vala) => {
+      var valb = document.getElementById(vala).innerHTML
+      console.log(valb)
+      document.body.style.backgroundColor = `${valb}`
+    }
+  </script>
+</body>
+</html>

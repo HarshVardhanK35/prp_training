@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color-Changer</title>
+  </head>
+  <body>
+    <script>
+      let username = prompt("Enter your name");
+
+      let favColor = prompt(
+        "Enter your fav color to change the background color of the web page: "
+      );
+
+      if (favColor) {
+        document.body.style.backgroundColor = `${favColor}`;
+        console.log(favColor)
+      } else {
+        console.log(favColor)
+        alert("Invalid color\nFavorite Color");
+      }
+    </script>
+  </body>
+</html>
